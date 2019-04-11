@@ -1,0 +1,93 @@
+body, html{
+  height: 100%;
+}
+
+body{
+  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  background-image: url("./background.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul{
+  height: 48px;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  list-style: none;
+  margin-top: 4rem;
+}
+li{
+  flex: 1 1 auto;
+
+}
+svg{
+ stroke: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+
+}
+a{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: transparent;
+  display: block;
+  transition: 0.1s;
+  position: relative;
+}
+a:hover{
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  width: 48px;
+  height: 48px;
+}
+main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image:url(./overlay.svg);
+  background-position:  center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon{
+  position: relative;
+  height: 0px;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 100%;
+
+}
+.tooltip{
+  display: none;
+    text-align: center;
+    position: absolute;
+    width: 4rem;
+    padding: .5rem .42rem;
+    left: 50%;
+    margin-left: -2rem;
+    top: 3.75rem;
+    border-radius: .125rem;
+    line-height: 1;
+    font-size: .75rem;
+    color: #fff;
+    background-color: rgba(50,50,50,.75);
+
+}
+a:hover .tooltip{
+  display: block;
+}
